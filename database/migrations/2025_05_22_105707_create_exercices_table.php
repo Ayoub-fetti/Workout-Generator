@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('exercices', function (Blueprint $table) {
+        Schema::create('exercises', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
             $table->enum('muscle_group', ['chest', 'legs', 'back', 'arms', 'core']);
@@ -24,6 +24,6 @@ return new class extends Migration
 
     public function down(): void
     {
-        Schema::dropIfExists('exercices');
+        Schema::dropIfExists('exercises');
     }
 };
