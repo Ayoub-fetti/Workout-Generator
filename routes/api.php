@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Infrastructure\Persistence\Eloquent\Http\Controllers\AuthController;
+use App\Interfaces\Http\Controllers\AuthController;
 
 Route::get('/user', function (Request $request) {
     return $request->user();

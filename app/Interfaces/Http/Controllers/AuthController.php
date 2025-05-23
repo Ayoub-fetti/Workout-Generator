@@ -1,5 +1,6 @@
 <?php
-namespace App\Infrastructure\Persistence\Eloquent\Http\Controllers;
+namespace App\Interfaces\Http\Controllers;
+
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Validation\ValidationException;
